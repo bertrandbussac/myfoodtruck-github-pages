@@ -17,10 +17,10 @@
 
 	<body class="text-center">
 
-	<nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
-		<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		   	<div class="navbar-header">
+		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
@@ -32,8 +32,7 @@
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		   
-		     
+		      
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#">Link</a></li>
 		        <li class="dropdown">
@@ -52,6 +51,7 @@
 		</nav>
 
 		<div id="header">
+			<div class="spacer"></div>
 			<h1>My Food Truck</h1>
 		</div>
 
@@ -69,7 +69,51 @@
 			<p>Nous sommes <em>dans le monde entier</em> Lorem ipsum dolor sit amet, consectetur adipisicing elist	<strong>Sed dolor, quidem illum distinctio</strong> omnis at dolores odit nisi architecto sunt commodi in voluptatem maiores ad temporibus ut ipsam consequuntur deserunt!</p>
 		</div>
 
-		<a class="btn btn-primary">Commandez !!!</a>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		  Launch demo modal
+		</button>
+
+				<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      </div>
+		      <div class="modal-body">
+		      
+<div id="wufoo-s1vdu0fg1964b68">
+Fill out my <a href="https://bertrabd.wufoo.com/forms/s1vdu0fg1964b68">online form</a>.
+</div>
+<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/partners/">Wufoo integrations</a> and get your data to your favorite apps.</div>
+<script type="text/javascript">var s1vdu0fg1964b68;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'bertrabd',
+'formHash':'s1vdu0fg1964b68',
+'autoResize':true,
+'height':'830',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { s1vdu0fg1964b68 = new WufooForm();s1vdu0fg1964b68.initialize(options);s1vdu0fg1964b68.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+
+		      
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 		<div>
 			<h3>Nos menus</h3>
@@ -109,6 +153,10 @@
 			</div>
 		</div>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
 		
 		<div>
 			<h3>Nos villes</h3>
@@ -127,6 +175,7 @@
 				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
+
 
 
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
